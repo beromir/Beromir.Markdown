@@ -1,0 +1,6 @@
+prototype(Beromir.Markdown:Markdown) {
+    @class = 'Beromir\\Markdown\\FusionObjects\\Markdown'
+    markdown = ${q(node).property('markdown')}
+
+    extensions = Beromir.Markdown:Extensions
+}

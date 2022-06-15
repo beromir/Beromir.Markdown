@@ -1,0 +1,10 @@
+'Beromir.Markdown:Content.Markdown':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Beromir.Markdown:Mixin.MarkdownEditor': true
+    'Beromir.Markdown:Mixin.MarkdownSettings': true
+  ui:
+    label: 'Markdown'
+    icon: 'icon-markdown'
+    position: 300
+  label: "${String.cropAtWord(Neos.Node.labelForNode(node).properties('markdown'), 28, '...')}"

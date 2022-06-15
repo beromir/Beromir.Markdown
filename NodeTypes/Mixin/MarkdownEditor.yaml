@@ -1,0 +1,28 @@
+'Beromir.Markdown:Mixin.MarkdownEditor':
+  abstract: true
+  ui:
+    inspector:
+      tabs:
+        markdown:
+          label: 'Markdown'
+          position: 'start'
+          icon: 'icon-markdown'
+      groups:
+        markdown:
+          label: 'Markdown'
+          position: 'start'
+          icon: 'icon-markdown'
+          tab: 'markdown'
+  properties:
+    markdown:
+      type: string
+      ui:
+        label: 'Markdown'
+        position: 'start'
+        reloadIfChanged: true
+        inspector:
+          group: 'markdown'
+          editor: 'Neos.Neos/Inspector/Editors/CodeEditor'
+          editorOptions:
+            buttonLabel: 'Edit Markdown'
+            highlightingMode: 'text/x-markdown'

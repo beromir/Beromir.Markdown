@@ -1,0 +1,4 @@
+prototype(Beromir.Markdown:Extensions) < prototype(Neos.Fusion:DataStructure) {
+    gfm = ${Beromir.Markdown.Config.getConfig(q(node).property('useGfm'), Configuration.setting('Beromir.Markdown.extensions.gfm'))}
+    externalLinks = ${Beromir.Markdown.Config.getConfig(q(node).property('renderExternalLinks'), Configuration.setting('Beromir.Markdown.extensions.externalLinks'))}
+}

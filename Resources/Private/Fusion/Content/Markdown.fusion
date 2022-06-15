@@ -1,0 +1,12 @@
+prototype(Beromir.Markdown:Content.Markdown) < prototype(Neos.Neos:ContentComponent) {
+
+    attributes = Neos.Fusion:DataStructure {
+        class = false
+    }
+
+    renderer = afx`
+        <div {...props.attributes}>
+            <Beromir.Markdown:Markdown/>
+        </div>
+    `
+}

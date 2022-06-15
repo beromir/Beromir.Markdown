@@ -1,0 +1,40 @@
+{
+    "description": "Markdown renderer for Neos CMS.",
+    "type": "neos-package",
+    "name": "beromir/neos-markdown",
+    "license": "GPL-3.0",
+    "keywords": [
+        "flow",
+        "neos",
+        "markdown"
+    ],
+    "require": {
+        "neos/neos": "^8.0",
+        "php": "^8.1",
+        "league/commonmark": "^2.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beromir\\Markdown\\": "Classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Henrik Reißig",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "neos": {
+            "package-key": "Beromir.Markdown"
+        }
+    },
+    "archive": {
+        "exclude": [
+            ".gitattributes",
+            ".github",
+            ".gitignore",
+            "LICENSE"
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+Neos:
+  Fusion:
+    defaultContext:
+      Beromir.Markdown.Markdown: 'Beromir\Markdown\EelHelper\MarkdownHelper'
+      Beromir.Markdown.Config: 'Beromir\Markdown\EelHelper\ConfigHelper'
+  Neos:
+    fusion:
+      autoInclude:
+        Beromir.Markdown: true

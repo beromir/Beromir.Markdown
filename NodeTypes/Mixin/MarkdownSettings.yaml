@@ -1,0 +1,37 @@
+'Beromir.Markdown:Mixin.MarkdownSettings':
+  abstract: true
+  properties:
+    useGfm:
+      type: boolean
+      defaultValue: false
+      ui:
+        label: 'Enable GitHub-Flavored Markdown'
+        help:
+          message: |
+            Enables the following features:  
+            - Autolinks
+            - Disallowed Raw HTML
+            - Strikethrough
+            - Tables
+            - Task Lists
+            
+            [Docs](https://commonmark.thephpleague.com/2.3/extensions/github-flavored-markdown/)
+        reloadIfChanged: true
+        inspector:
+          group: 'markdown'
+          position: 100
+    renderExternalLinks:
+      type: boolean
+      defaultValue: false
+      ui:
+        label: 'Render external links'
+        help:
+          message: |
+            Open links to external sites in a new tab/window.
+
+            [Docs](https://commonmark.thephpleague.com/2.3/extensions/external-links/)
+        reloadIfChanged: true
+        inspector:
+          group: 'markdown'
+          position: 200
+          hidden: 'ClientEval:node.properties.useGfm ? false : true'

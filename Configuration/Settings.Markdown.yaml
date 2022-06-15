@@ -1,0 +1,6 @@
+Beromir:
+  Markdown:
+    extensions:
+      # GitHub-Flavored Markdown
+      gfm: false
+      externalLinks: false
